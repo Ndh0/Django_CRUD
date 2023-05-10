@@ -1,0 +1,31 @@
+
+{% block content %}
+<head>
+    <style>
+        .container {
+	margin: 50px auto;
+	width: 50%;
+	text-align: center;
+}
+
+h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+a {
+	display: block;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h2>Vous êtes déconnecté</h2>
+		<a href="{% url 'login' %}">Se reconnecter</a>
+	</div>
+</body>
+
+{% endblock %}
